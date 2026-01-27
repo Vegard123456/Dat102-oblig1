@@ -77,4 +77,22 @@ public class Film {
     public void setFilmselskap(String filmselskap) {
         this.filmselskap = filmselskap;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+
+        Film other = (Film) o;
+        return this.filmnr == other.filmnr;
+    }
+
+    @Override
+    public int hashCode() {
+        return Integer.hashCode(this.filmnr);
+    }
 }
