@@ -1,9 +1,5 @@
 package no.hvl.data102.filmarkiv.impl;
 
-public enum Sjanger {
-    Action, Drama, History, Scifi;
-}
-
 public class Film {
     private int filmnr;
     private String produsent;
