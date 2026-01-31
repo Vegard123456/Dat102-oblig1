@@ -1,6 +1,8 @@
 package no.hvl.data102.filmarkiv.impl;
 
-public class Filmarkiv2 implements FilmarkivADT{
+import no.hvl.data102.filmarkiv.adt.FilmarkivADT;
+
+public class Filmarkiv2 implements FilmarkivADT {
 
     private int antall;
     private LinearNode<Film> start;
@@ -64,6 +66,11 @@ public class Filmarkiv2 implements FilmarkivADT{
             p = p.neste;
         }
         return count;
+    }
+
+    @Override
+    public int antall() {
+        return 0;
     }
 
     @Override
