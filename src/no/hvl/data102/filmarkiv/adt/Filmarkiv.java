@@ -23,7 +23,7 @@ public class Filmarkiv implements FilmarkivADT {
     }
 
     @Override
-    void leggTilFilm(Film nyFilm) {
+    public void leggTilFilm(Film nyFilm) {
         if (antall == arkiv.length) {
             utvid();
         }
@@ -32,7 +32,7 @@ public class Filmarkiv implements FilmarkivADT {
     }
 
     @Override
-    boolean slettFilm(int filmnr) {
+    public boolean slettFilm(int filmnr) {
         for (int i = 0; i < antall; i++) {
             if (arkiv[i].getFilmnr() == filmnr) {
                 for (int j = i; j < antall; j++) {
