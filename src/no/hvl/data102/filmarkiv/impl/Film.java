@@ -1,5 +1,7 @@
 package no.hvl.data102.filmarkiv.impl;
 
+import org.jetbrains.annotations.NotNull;
+
 public class Film {
     private int filmnr;
     private String produsent;
@@ -24,6 +26,9 @@ public class Film {
         this.arstall = arstall;
         this.sjanger = sjanger;
         this.filmselskap = filmselskap;
+    }
+
+    public Film(int filmnr, String theMatrix, int i, String lanaWachowski, @NotNull Sjanger sjanger, String warnerBros) {
     }
 
     public int getFilmnr() {
