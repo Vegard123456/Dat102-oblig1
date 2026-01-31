@@ -1,5 +1,6 @@
 import no.hvl.data102.filmarkiv.adt.FilmarkivADT;
 import no.hvl.data102.filmarkiv.impl.Filmarkiv2;
+import no.hvl.data102.filmarkiv.test.Meny;
 
 public class FilmarkivMain {
     public static void main(String[] args) {
