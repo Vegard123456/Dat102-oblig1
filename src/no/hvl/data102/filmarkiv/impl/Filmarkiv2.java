@@ -69,6 +69,11 @@ public class Filmarkiv2 implements FilmarkivADT {
     }
 
     @Override
+    public int antall() {
+        return 0;
+    }
+
+    @Override
     public Film[] soekTittel(String delstreng) {
         int count = 0;
         LinearNode<Film> p = start;
